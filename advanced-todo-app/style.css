@@ -1,0 +1,105 @@
+/* Advanced To-Do List App Styles
+   Author: Dieume Willstein
+   Email: dieumewillstein@gmail.com
+   Year: 2025
+*/
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007bff;
+  --low-priority: #d4edda;
+  --medium-priority: #fff3cd;
+  --high-priority: #f8d7da;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --accent-color: #66b2ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+button {
+  padding: 0.5rem;
+  margin: 0.3rem 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#task-list {
+  margin-top: 1rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+.task-item.low {
+  background-color: var(--low-priority);
+}
+
+.task-item.medium {
+  background-color: var(--medium-priority);
+}
+
+.task-item.high {
+  background-color: var(--high-priority);
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+footer::after {
+  content: "Created by Dieume Willstein | dieumewillstein@gmail.com | © 2025";
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+

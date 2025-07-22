@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Dieume Willstein" />
+  <title>Number Guessing Game | Dieume Willstein</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1> Number Guessing Game</h1>
+    <p id="description">Guess a number between <span id="min">1</span> and <span id="max">100</span></p>
+
+    <div class="input-area">
+      <input type="number" id="guess-input" placeholder="Enter your guess" />
+      <button id="guess-btn">Guess</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <p id="feedback"></p>
+    <p id="attempts">Attempts: <span>0</span></p>
+    <p id="high-score">Best Score: <span>-</span></p>
+
+    <div id="difficulty">
+      <label for="level">Difficulty:</label>
+      <select id="level">
+        <option value="100">1-100</option>
+        <option value="50">1-50</option>
+        <option value="500">1-500</option>
+      </select>
+    </div>
+
+    <footer>
+      <p>Created by <strong>Dieume Willstein</strong></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body></html>
+

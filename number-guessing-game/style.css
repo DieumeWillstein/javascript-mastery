@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+#feedback {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
